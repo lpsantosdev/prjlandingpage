@@ -1,0 +1,9 @@
+This project  was created by Leandro Pessoa dos Santos.
+The projet consists in a test webpage Landing Page developed using HTML 5 and CSS 3.
+The product represented in this test was elaborated and designed by Leandro Pessoa dos Santos and own ideas.
+
+Landing Page description: Diet menu (breakfast, lunch, dinner).
+Ideas applied: 
+- Color pallet green
+- Forms to assing newsletter
+- Navigation menu
