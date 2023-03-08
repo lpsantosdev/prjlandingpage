@@ -1,35 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Open+Sans&display=swap');
-
-/*<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Open+Sans&display=swap" rel="stylesheet">*/
 .top {
     margin: 0;
-    padding: 0;
+    padding: 0 60px;
     background-color: rgba(36, 14, 56, 0.692);
-    height: 50px;
-    overflow: hidden;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center
 
 }
 
 .top-logo {
-    width: 120px;
-    float: left;
-    padding: 5px 0 0 70px;
+    width: 150px;
 
 }
 
 .top-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap:30px;
     margin: 0;
     padding: 0;
-    text-align: right;
     font-size: 1em;
-    padding-top: .8em;
-
-
-
 }
 
 .top-nav li {
-    display: inline-block;
+    
     list-style: none;
     padding-right: 2.5em;
 }
@@ -43,6 +40,7 @@
 
 .top-nav a:hover {
     color: rgb(128, 41, 209);
+    text-decoration: underline;
 }
 
 
@@ -55,11 +53,17 @@ body {
 
 }
 
+.main-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
 .container-1 {
-    width: 60%;
     height: 100%;
-    display: inline-block;
-    overflow: hidden;
+    
 
 }
 
@@ -94,11 +98,10 @@ body {
 }
 
 .main-content-form fieldset {
-    /*background-color: #fa68b6;
-    background-color: rgba(36, 14, 56, 0.692);
-    border-radius: 20px;*/
+    background-color: rgba(42, 14, 68, 0.062);
+    border-radius: 20px;
     border: none;
-    max-width: 100%;
+    max-width: 75%;
 
 }
 
@@ -125,8 +128,13 @@ input {
 .form-checkbox-size {
     color: #f1f1f1;
     font-size: 1.5em;
-    margin-left: 10px;
-    padding-left: 10px;
+    margin-left: 5px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    
 }
 
 .form-checkbox-size input {
@@ -140,6 +148,7 @@ input {
 
 .form-button {
     font-size: 1.5em;
+    height: 2em;
     width: 200px;
     background-color: rgba(36, 14, 56, 0.692);
 }
@@ -149,22 +158,85 @@ input {
 }
 
 .container-2 {
-    width: 38%;
-    display: inline-block;
-    overflow: auto;
-    height: 410px;
+    margin: auto;
+    padding: 0;   
+    
 }
 
 .container-2 img {
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 20px;
+    box-shadow: 2px 2px 3px rgba(36, 36, 36, 0.822);
+    
+    
 }
 
 .index-foot {
+    margin: 0;
+    padding: 0;
     height: 49px;
     background-color: rgba(36, 14, 56, 0.692);
     text-align: center;
     line-height: 49px;
     color: #f1f1f1;
     letter-spacing: 5px;
+}
+
+/* Mobile */
+@media (max-width:450px) {
+    .top {
+        margin: 0;
+        padding: .5em;
+        background-color: rgba(36, 14, 56, 0.692);
+        display: flex;
+        flex-direction: row;
+        justify-content:safe;
+        align-items:center
+    }
+
+    .top-logo {
+        width: 120px;
+    }
+
+    .top-nav ul {
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        margin: 0;
+        padding: 0;
+        font-size: .8em;
+        }
+    .top-nav li {
+        list-style: none;
+        padding-right: .5em;
+        }
+
+    .top-nav a {
+        letter-spacing: .2em;
+        }
+
+    .main-content{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            }
+          
+    .main-content h1{
+            font-size: 2.5em;
+            
+        } 
+        
+    .main-content p{
+            font-size: 1.8em;
+        }
+
+        
+        .container-2 {
+            display: flex;
+            justify-content:space-around;
+            padding-top: 30px;
+            max-width: 85%;
+            
+        }
 }
